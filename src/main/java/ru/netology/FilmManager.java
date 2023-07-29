@@ -1,16 +1,17 @@
 package ru.netology;
 
 public class FilmManager {
-private String[] films = new String[0];
-private int limit;
+    private String[] films = new String[0];
+    private int limit;
 
-public FilmManager() {
-    this.limit = 5;
-}
+    public FilmManager() {
+        this.limit = 5;
+    }
 
-public FilmManager(int limit) {
-    this.limit = limit;
-}
+    public FilmManager(int limit) {
+        this.limit = limit;
+    }
+
     public void add(String film) {
         String[] tmp = new String[films.length + 1];
         for (int i = 0; i < films.length; i++) {
